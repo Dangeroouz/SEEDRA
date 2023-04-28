@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;  
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.header a{
+    color: #70737C;
+    text-decoration: none;
+}
+.header-social{
+    display: flex;
+    gap: 15px;
+}
+.header-likemarket{
+    display: flex;
+    gap: 25px;
+}
+.seed-ad{
+    display: flex;
+    justify-content: space-between;
+    background: #EAF1EB;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.seed-ad-big-img{
+    width: 350px;
+   
+}
+.seed-ad h2{
+    padding-top: 30px;
+    font-size: 48px;
+    width: 700px;
+}
+.seed-ad-content{
+    font-size: 16px;
+    line-height: 28px;
+    width: 600px;
+}
+.seed-ad div:nth-child(1){
+    padding-left: 80px;
+}
+.seed-ad-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+.seed-ad-price p{
+    font-size: 42px;
+    font-weight: 600;
+}
+.seed-ad-price strike{
+    color: #70737C;
+    font-size: 22px;
+}
+.seed-ad-add{
+    padding-top: 20px;
+}
+.seed-button-add{
+    background: #359740;
+    color: white;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+.seed-button-discover{
+    background: white;
+    color: 359740;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 0px;
+    margin-left: 5px;
+}
+.we-sell-seeds{
+    background: rgba(255, 230, 46, 0.09);
+    display: flex;
+    height: 104px;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.we-sell-seeds div{
+    padding-top: 30px;
+}
+.we-sell-seeds h2{
+    text-align: center;
+}
+.we-sell-seeds p{
+    color: #70737C;
+}
+.our-products-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.our-products-header h2{
+    font-size: 36px;
+}
+.our-products-header a{
+    text-decoration: none;
+    color: #359740;
+}
+.our-products-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.our-products-menu-item{
+    display: flex;
+    gap: 10px;
+    border: 2px solid #EFEFEF;
+    border-radius: 8px;
+    padding: 15px;
+}
+.product{
+    width: 294px;
+    margin: 0 auto;
+    border: 2px solid #EFEFEF;
+    border-radius: 8px;
+    padding: 20px;
+}
+.our-products-main{
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.products-rate{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.products-rate img{
+    height: 15px;
+}
+.product-price div{
+    display: flex;
+    font-weight: 600;
+    font-size: 28px;
+}
+.product-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-describtion{
+        font-size: 15px;
+}
+.our-products-menu{
+    margin-bottom: 50px;
+}
+.product-favorite{
+    position: absolute;
+    margin-left: 270px;
+    margin-top: -15px;
+}
+.visually-hidden{
+    position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.search{
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.search::placeholder{
+    padding-left: 10px;
+}
+@media (min-width:720px) and (max-width:1280px){
+    .container{
+        width: 720px;
+    }
+    .tablet-phone-hidden{
+        position: absolute;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0;
+      border: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+    }
+    .seed-ad div:nth-child(1){
+        padding-left: 20px;
+        width: 300px;
+    }
+    .seed-ad > div:nth-child(2) img{
+        width: 250px;
+    }
+    .seed-ad > div h2{
+        padding-top: 20px;
+        font-size: 26px;
+        width: 400px;
+    }
+    .seed-ad-content{
+        width: 400px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .seed-ad{
+        padding-top: 0;
+    }
+    .seed-ad-price p{
+        font-size: 25px;
+    }
+    .our-products-menu{
+        flex-wrap: wrap;
+    }
+    .our-products-main{
+        grid: 300px 300px 300px/ 330px 330px ;
+    }
+    .product-img{
+        width: 200px;
+    }
+}
